@@ -2,5 +2,5 @@
 To simplify the processes of programming a single Java file, use
 ```bash
 $ javac Prog.java # "Prog.class"" will be generated
-$ java Prog # run the program, not ".class"
+$ java Prog # run the program, not "Prog.class"
 ```
