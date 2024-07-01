@@ -1,5 +1,5 @@
-class Asn02 {
-    public static void fooCorportaion(double basePay, int hoursWorked) {
+class FooCorporation {
+    public static void fooCorporation(double basePay, int hoursWorked) {
         double totalPay = 0;
         if (basePay < 8) {
             System.out.println("Error: base pay is less than $8.00!");
@@ -23,10 +23,10 @@ class Asn02 {
     
     public static void main(String[] args) {
         System.out.println("Employee 1:");
-        fooCorportaion(7.5, 35);
+        fooCorporation(7.5, 35);
         System.out.println("Employee 2:");
-        fooCorportaion(8.2, 47);
+        fooCorporation(8.2, 47);
         System.out.println("Employee 3:");
-        fooCorportaion(10, 73);
+        fooCorporation(10, 73);
     }
 }
