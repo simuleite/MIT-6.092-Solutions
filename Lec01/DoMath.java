@@ -1,5 +1,3 @@
-package first;
-
 public class DoMath {
  public static void main(String[] arguments) {
 	 double score = 1.0 + 2.0 * 3.0;

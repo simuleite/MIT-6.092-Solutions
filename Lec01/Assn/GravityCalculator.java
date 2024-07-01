@@ -1,8 +1,4 @@
-package asn;
-
-import javax.swing.text.Position;
-
-public class GravityCalculator {
+class GravityCalculator {
 	public static void main(String[] arguments) {
 		double gravity = -9.81;
 		double initialVelocity = 0.0;

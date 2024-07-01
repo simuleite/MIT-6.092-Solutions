@@ -1,5 +1,3 @@
-package thrid;
-
 public class Thrid {
 	public static void main(String[] arguments) {
 		String foo = "IAP 6.092";
