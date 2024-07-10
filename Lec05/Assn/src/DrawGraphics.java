@@ -13,7 +13,8 @@ public class DrawGraphics {
         boxes.add(box);
         box = new BouncingBox(50, 250, Color.BLUE);
         boxes.add(box);
-
+        box = new BouncingBox(250, 250, Color.GREEN);
+        boxes.add(box);
 
     }
 
@@ -27,7 +28,11 @@ public class DrawGraphics {
         surface.drawOval(150, 20, 75, 125);
         surface.fillRect(160, 70, 55, 10);
         
-        box.draw(surface);
-        // box.setMovementVector(-2, 0);
+        boxes.get(0).draw(surface);
+        boxes.get(1).draw(surface);
+        boxes.get(2).draw(surface);
+        boxes.get(0).setMovementVector(-2, 1);
+        boxes.get(1).setMovementVector(2, -1);
+        boxes.get(2).setMovementVector(-2, -2);
     }
 }
