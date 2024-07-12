@@ -28,23 +28,14 @@ public class MoveItems implements Mover {
         y += yDirection;
     }
     
-    public int getX() {
-        return x;
-    }
-
-    public int getXDirection() {
-        return xDirection;
-    }
-
-    public int getY() {
-        return y;
-    }
-
-    public int getYDirection() {
-        return yDirection;
-    }
-
-    public Sprite getSprite() {
-        return sprite;
+    public void bounce() {
+        if ((x <= 0 && xDirection < 0) ||
+                (x + sprite.getWidth() >= SimpleDraw.WIDTH && xDirection > 0)) {
+            xDirection = -xDirection;
+        }
+        if ((y <= 0 && yDirection < 0) ||
+                (y + sprite.getHeight() >= SimpleDraw.HEIGHT && yDirection > 0)) {
+            yDirection = -yDirection;
+        }
     }
 }
