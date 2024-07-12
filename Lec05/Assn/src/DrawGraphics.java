@@ -16,6 +16,11 @@ public class DrawGraphics {
         box = new BouncingBox(250, 250, Color.GREEN);
         boxes.add(box);
 
+        // Or put setMovementVector() here.
+        // boxes.get(0).setMovementVector(-2, 1);
+        // boxes.get(1).setMovementVector(2, -1);
+        // boxes.get(2).setMovementVector(-2, -2);
+ 
     }
 
     /** Draw the contents of the window on surface. Called 20 times per second. */
@@ -34,5 +39,16 @@ public class DrawGraphics {
         boxes.get(0).setMovementVector(-2, 1);
         boxes.get(1).setMovementVector(2, -1);
         boxes.get(2).setMovementVector(-2, -2);
+        
+        // Better way:
+        // for (BouncingBox box: boxes) {
+            // box.draw(surface);
+        // }
+        
+        // surface.fillRect(150, 100, 25, 40);
+        surface.setColor(Color.YELLOW);
+        // After this items turn yellow
+        surface.fillOval(40, 40, 25, 10);
+        surface.drawString("Mr. And Mrs. Smith", 200, 10);
     }
 }
