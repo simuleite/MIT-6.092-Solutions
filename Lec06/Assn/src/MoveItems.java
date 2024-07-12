@@ -27,4 +27,24 @@ public class MoveItems implements Mover {
         x += xDirection;
         y += yDirection;
     }
+    
+    public int getX() {
+        return x;
+    }
+
+    public int getXDirection() {
+        return xDirection;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public int getYDirection() {
+        return yDirection;
+    }
+
+    public Sprite getSprite() {
+        return sprite;
+    }
 }
